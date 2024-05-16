@@ -10,6 +10,8 @@ public class FormTable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id ;
-    private int tableName;
+    private String formName;
     private int userId ;
-}
+	
+	}
+
