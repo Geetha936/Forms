@@ -1,6 +1,7 @@
 package com.project.forms.Data.Forms.Controller;
 
 import com.project.forms.Data.Forms.Models.QuestionTable;
+import com.project.forms.Data.Forms.RequestModels.AddQuestionsModel;
 import com.project.forms.Data.Forms.Services.QuestionService;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +18,7 @@ public class QuestionsController {
     }
 
     @PostMapping("add")
-    public void addquestions(@RequestBody List<QuestionTable> questionsList){
+    public void addquestions(@RequestBody List<AddQuestionsModel> questionsList){
         questionService.addQuestions(questionsList);
     }
     @GetMapping("formques")

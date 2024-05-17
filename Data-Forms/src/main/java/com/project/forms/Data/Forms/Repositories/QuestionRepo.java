@@ -8,4 +8,6 @@ import java.util.List;
 public interface QuestionRepo extends JpaRepository<QuestionTable , Integer> {
 	
 	List<QuestionTable> findByFormId(int formId);
+
+	void deleteByFormId(int formId);
 }

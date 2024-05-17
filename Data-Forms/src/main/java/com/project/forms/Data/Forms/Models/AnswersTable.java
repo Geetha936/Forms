@@ -14,7 +14,7 @@ public class AnswersTable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int ansId;
-	
+
 	private String response;
 
 	private int questionId;
